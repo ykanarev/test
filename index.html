@@ -1,10 +1,14 @@
 <html>
 <head>
+    <script type="text/javascript" src="wgo/wgo.min.js"></script>
+    <script type="text/javascript" src="wgo/wgo.player.min.js"></script>
+    <link type="text/css" href="wgo/wgo.player.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>test</h1>
-  <script>
-    alert('test')
-  </script>
+    <div id="player"/>
+    <script>
+        var elem = document.getElementById("player");
+        var player = new WGo.BasicPlayer(elem,{sgf: "(;PB[Black]PW[White]RE[B+R];B[qd];W[dd];B[pq];W[dq];B[fc])"});
+    </script>
 </body>
 </html>
