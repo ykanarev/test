@@ -1,5 +1,6 @@
 <html>
 <head>
+    <script src="https://vk.com/js/api/openapi.js?139" type="text/javascript"></script>
     <script type="text/javascript" src="wgo/wgo.min.js"></script>
     <script type="text/javascript" src="wgo/wgo.player.min.js"></script>
     <link type="text/css" href="wgo/wgo.player.css" rel="stylesheet" />
@@ -7,11 +8,11 @@
 <body>
     <div id="player"/>
     <script src="main.js"></script>
-    <script src="https://vk.com/js/api/openapi.js?139" type="text/javascript"></script>
     <script type="text/javascript">
       VK.init({
         apiId: 5876807
       });
+      //VK.Api.call('wall.getById',{posts:-8888882_594},function(r){});
     </script>
     <script>
         var elem = document.getElementById("player");
